@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Responsiive Admin Dashboard | CodingLab </title>
+    <link rel="stylesheet" href="UserProfileStyle.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-details">
+            <i class="bx bxl-html5"></i>
+            <span class="logo_name">DACH YUB COMPANY</span>
+            <i class="bx bxl-css3"></i>
+        </div>
+        <hr>
+        <ul class="nav-links">
+            <li>
+                <a href="Dashboard.html">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"  class="active">
+                    <i class="bx bx-user-circle"></i>
+                    <span class="links_name">User Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-map"></i>
+                    <span class="links_name">Maps</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-notification"></i>
+                    <span class="links_name">Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-support"></i>
+                    <span class="links_name">Support</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="home-section">
+        <section>
+            <nav>
+                <!-- Sidebar -->
+                <div class="sidebar-button">
+                    <i class="bx bx-menu sidebarBtn"></i>
+                    <span class="dashboard">User Profile</span>
+                </div>
+            </nav>
+        </section>
+        <section>
+            <div class="data-content">
+                <div class="overview-data-boxes">
+                    <div class="data-box-one">
+                        <div class="nav-tag">
+                            <h3>Edit Profile</h3>
+                            <h6>Complete your profile</h6>
+                            </div>
+                    </div>
+
+                    <div class="data-box-two">
+                        <img src="./Cat.jpg" alt="profile" class="profile-icon">
+                        <h6>CEO / CO-FOUNDER</h6>
+                        <h5>The CAT</h5>
+                        <p>Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanya loves Kanya I love Rick Owen's bed design but the bed is...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+
+<footer>
+    <hr>
+    <div class="grid-content">
+        <div class="grid-item">ABOUT</div>
+        <div class="grid-item">BLOG</div>
+        <div class="grid-item">LICENCE</div>  
+        <div class="grid-item">2019 - MADE WITH LOVE</div>  
+      </div>
+</footer>
+</html>
